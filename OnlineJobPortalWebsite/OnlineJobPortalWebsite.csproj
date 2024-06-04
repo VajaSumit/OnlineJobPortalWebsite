@@ -1,0 +1,701 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BAFBC3E6-C6C2-4C95-A0F6-EC2630222EF3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OnlineJobPortalWebsite</RootNamespace>
+    <AssemblyName>OnlineJobPortalWebsite</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Sumit\Documents\ASP.NET AJAX Control Toolkit\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AppliedCandidateWithsStatus.aspx" />
+    <Content Include="Admin\css\sb-admin-2.css" />
+    <Content Include="Admin\css\sb-admin-2.min.css" />
+    <Content Include="Admin\default.aspx" />
+    <Content Include="Admin\Images\112 %281%29.jpg" />
+    <Content Include="Admin\img\undraw_posting_photo.svg" />
+    <Content Include="Admin\img\undraw_profile.svg" />
+    <Content Include="Admin\img\undraw_profile_1.svg" />
+    <Content Include="Admin\img\undraw_profile_2.svg" />
+    <Content Include="Admin\img\undraw_profile_3.svg" />
+    <Content Include="Admin\img\undraw_rocket.svg" />
+    <Content Include="Admin\js\sb-admin-2.js" />
+    <Content Include="Admin\js\sb-admin-2.min.js" />
+    <Content Include="Admin\ManageCategory.aspx" />
+    <Content Include="Admin\ManageCompanies.aspx" />
+    <Content Include="Admin\ManageJobSeekers.aspx" />
+    <Content Include="Admin\ManagePostedJobs.aspx" />
+    <Content Include="Admin\ManageTheAppliedCandidates.aspx" />
+    <Content Include="Admin\Messages.aspx" />
+    <Content Include="Admin\Notifications.aspx" />
+    <Content Include="Admin\ProfilePage.aspx" />
+    <Content Include="Admin\RegistaredCompany.aspx" />
+    <Content Include="Admin\UpdateAboutUsPage.aspx" />
+    <Content Include="Admin\UpdateContactasPage.aspx" />
+    <Content Include="assets\css\animate.min.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\flaticon.css" />
+    <Content Include="assets\css\fontawesome-all.min.css" />
+    <Content Include="assets\css\magnific-popup.css" />
+    <Content Include="assets\css\nice-select.css" />
+    <Content Include="assets\css\owl.carousel.min.css" />
+    <Content Include="assets\css\price_rangs.css" />
+    <Content Include="assets\css\responsive.css" />
+    <Content Include="assets\css\slick.css" />
+    <Content Include="assets\css\slicknav.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\themify-icons.css" />
+    <Content Include="assets\fonts\fa-brands-400.svg" />
+    <Content Include="assets\fonts\fa-regular-400.svg" />
+    <Content Include="assets\fonts\fa-solid-900.svg" />
+    <Content Include="assets\fonts\flaticon.html" />
+    <Content Include="assets\fonts\Flaticon.svg" />
+    <Content Include="assets\fonts\themify.svg" />
+    <Content Include="assets\img\backimage.jpg" />
+    <Content Include="assets\img\EmptyStar.jpg" />
+    <Content Include="assets\img\FilledStar.jpg" />
+    <Content Include="assets\img\loading1.gif" />
+    <Content Include="assets\img\loading2.gif" />
+    <Content Include="assets\img\loadingimagess.gif" />
+    <Content Include="assets\img\login.gif" />
+    <Content Include="assets\img\about_3697.ico" />
+    <Content Include="assets\img\AI_Engineer.jpg" />
+    <Content Include="assets\img\background2.jpg" />
+    <Content Include="assets\img\CloudArchitect.jpg" />
+    <Content Include="assets\img\Custom-Icon-Design-Mono-General-3-Home.24.png" />
+    <Content Include="assets\img\data-scientist.jpg" />
+    <Content Include="assets\img\favicon.ico" />
+    <Content Include="assets\img\fullstackSoftwareDeveloper.jpg" />
+    <Content Include="assets\img\Home.ico" />
+    <Content Include="assets\img\img1.jpg" />
+    <Content Include="assets\img\img2.jpg" />
+    <Content Include="assets\img\img3.jpeg" />
+    <Content Include="assets\img\img4.jpeg" />
+    <Content Include="assets\img\logout.ico" />
+    <Content Include="assets\img\passwordhide.png" />
+    <Content Include="assets\img\passwordshow.png" />
+    <Content Include="assets\img\profile.ico" />
+    <Content Include="assets\img\search_47686.ico" />
+    <Content Include="assets\jquery.js" />
+    <Content Include="assets\js\animated.headline.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\contact.js" />
+    <Content Include="assets\js\jquery.ajaxchimp.min.js" />
+    <Content Include="assets\js\jquery.form.js" />
+    <Content Include="assets\js\jquery.magnific-popup.js" />
+    <Content Include="assets\js\jquery.nice-select.min.js" />
+    <Content Include="assets\js\jquery.paroller.min.js" />
+    <Content Include="assets\js\jquery.scrollUp.min.js" />
+    <Content Include="assets\js\jquery.slicknav.min.js" />
+    <Content Include="assets\js\jquery.sticky.js" />
+    <Content Include="assets\js\jquery.validate.min.js" />
+    <Content Include="assets\js\mail-script.js" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\one-page-nav-min.js" />
+    <Content Include="assets\js\owl.carousel.min.js" />
+    <Content Include="assets\js\plugins.js" />
+    <Content Include="assets\js\popper.min.js" />
+    <Content Include="assets\js\price_rangs.js" />
+    <Content Include="assets\js\slick.min.js" />
+    <Content Include="assets\js\vendor\jquery-1.12.4.min.js" />
+    <Content Include="assets\js\vendor\modernizr-3.5.0.min.js" />
+    <Content Include="assets\js\wow.min.js" />
+    <Content Include="Company\css\sb-admin-2.css" />
+    <Content Include="Company\css\sb-admin-2.min.css" />
+    <Content Include="Company\EditTakeAction.aspx" />
+    <Content Include="Company\img\undraw_posting_photo.svg" />
+    <Content Include="Company\img\undraw_profile.svg" />
+    <Content Include="Company\img\undraw_profile_1.svg" />
+    <Content Include="Company\img\undraw_profile_2.svg" />
+    <Content Include="Company\img\undraw_profile_3.svg" />
+    <Content Include="Company\img\undraw_rocket.svg" />
+    <Content Include="Company\js\demo\chart-area-demo.js" />
+    <Content Include="Company\js\demo\chart-bar-demo.js" />
+    <Content Include="Company\js\demo\chart-pie-demo.js" />
+    <Content Include="Company\js\demo\datatables-demo.js" />
+    <Content Include="Company\js\sb-admin-2.js" />
+    <Content Include="Company\js\sb-admin-2.min.js" />
+    <Content Include="Company\PostJobs.aspx" />
+    <Content Include="Company\ManagePostedJobs.aspx" />
+    <Content Include="Company\CommunicationWithCandidate.aspx" />
+    <Content Include="Company\ProfilePage.aspx" />
+    <Content Include="Company\dashboard.aspx" />
+    <Content Include="Company\ManageAppliedCandidate.aspx" />
+    <Content Include="Company\SettingPage.aspx" />
+    <Content Include="Company\TakeActionPage.aspx" />
+    <Content Include="Company\UpdateThePostedJob.aspx" />
+    <Content Include="Company\ViewSingleCandidateDetails.aspx" />
+    <Content Include="JobSeeker\AppliedJobs.aspx" />
+    <Content Include="JobSeeker\FeedbackAndRattingPage.aspx" />
+    <Content Include="JobSeeker\JobDetails.aspx" />
+    <Content Include="JobSeeker\JobListPage.aspx" />
+    <Content Include="JobSeeker\ProfilePage.aspx" />
+    <Content Include="JobSeeker\RecruiterMessage.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="User\ForgotPassword.aspx" />
+    <Content Include="User\LoginPage.aspx" />
+    <Content Include="User\RegistrationPageForJH.aspx" />
+    <Content Include="User\RegistrationPageForJS.aspx" />
+    <Content Include="User\ResetPassword.aspx" />
+    <Content Include="User\UserMaster.Master" />
+    <Content Include="JobSeeker\JobSeeker.Master" />
+    <Content Include="assets\fonts\fa-brands-400.eot" />
+    <Content Include="assets\fonts\fa-brands-400.ttf" />
+    <Content Include="assets\fonts\fa-brands-400.woff" />
+    <Content Include="assets\fonts\fa-brands-400.woff2" />
+    <Content Include="assets\fonts\fa-regular-400.eot" />
+    <Content Include="assets\fonts\fa-regular-400.ttf" />
+    <Content Include="assets\fonts\fa-regular-400.woff" />
+    <Content Include="assets\fonts\fa-regular-400.woff2" />
+    <Content Include="assets\fonts\fa-solid-900.eot" />
+    <Content Include="assets\fonts\fa-solid-900.ttf" />
+    <Content Include="assets\fonts\fa-solid-900.woff" />
+    <Content Include="assets\fonts\fa-solid-900.woff2" />
+    <Content Include="assets\fonts\Flaticon.eot" />
+    <Content Include="assets\fonts\Flaticon.ttf" />
+    <Content Include="assets\fonts\Flaticon.woff" />
+    <Content Include="assets\fonts\Flaticon.woff2" />
+    <Content Include="assets\fonts\themify.eot" />
+    <Content Include="assets\fonts\themify.ttf" />
+    <Content Include="assets\fonts\themify.woff" />
+    <Content Include="assets\fonts\_flaticon.scss" />
+    <Content Include="assets\scss\style.scss" />
+    <Content Include="assets\scss\_apply-proces.scss" />
+    <Content Include="assets\scss\_blog.scss" />
+    <Content Include="assets\scss\_blog_page.scss" />
+    <Content Include="assets\scss\_bradcam.scss" />
+    <Content Include="assets\scss\_color.scss" />
+    <Content Include="assets\scss\_common.scss" />
+    <Content Include="assets\scss\_contact.scss" />
+    <Content Include="assets\scss\_cv-online.scss" />
+    <Content Include="assets\scss\_elements.scss" />
+    <Content Include="assets\scss\_extend.scss" />
+    <Content Include="assets\scss\_featured-Jobs.scss" />
+    <Content Include="assets\scss\_footer.scss" />
+    <Content Include="assets\scss\_h1-hero.scss" />
+    <Content Include="assets\scss\_headerMenu.scss" />
+    <Content Include="assets\scss\_job_details.scss" />
+    <Content Include="assets\scss\_job_listing.scss" />
+    <Content Include="assets\scss\_mixins.scss" />
+    <Content Include="assets\scss\_overlay.scss" />
+    <Content Include="assets\scss\_pagination.scss" />
+    <Content Include="assets\scss\_recent.scss" />
+    <Content Include="assets\scss\_services.scss" />
+    <Content Include="assets\scss\_services_section.scss" />
+    <Content Include="assets\scss\_support-company.scss" />
+    <Content Include="assets\scss\_team.scss" />
+    <Content Include="assets\scss\_testimonial.scss" />
+    <Content Include="assets\scss\_variables.scss" />
+    <Content Include="assets\img\company_buildingImage.jpg" />
+    <Content Include="Company\CompanyMaster.Master" />
+    <Content Include="Admin\AdminMaster.Master" />
+    <Content Include="Admin\scss\sb-admin-2.scss" />
+    <Content Include="Admin\scss\_buttons.scss" />
+    <Content Include="Admin\scss\_cards.scss" />
+    <Content Include="Admin\scss\_charts.scss" />
+    <Content Include="Admin\scss\_dropdowns.scss" />
+    <Content Include="Admin\scss\_error.scss" />
+    <Content Include="Admin\scss\_footer.scss" />
+    <Content Include="Admin\scss\_global.scss" />
+    <Content Include="Admin\scss\_login.scss" />
+    <Content Include="Admin\scss\_mixins.scss" />
+    <Content Include="Admin\scss\_navs.scss" />
+    <Content Include="Admin\scss\_utilities.scss" />
+    <Content Include="Admin\scss\_variables.scss" />
+    <Content Include="Company\scss\sb-admin-2.scss" />
+    <Content Include="Company\scss\_buttons.scss" />
+    <Content Include="Company\scss\_cards.scss" />
+    <Content Include="Company\scss\_charts.scss" />
+    <Content Include="Company\scss\_dropdowns.scss" />
+    <Content Include="Company\scss\_error.scss" />
+    <Content Include="Company\scss\_footer.scss" />
+    <Content Include="Company\scss\_global.scss" />
+    <Content Include="Company\scss\_login.scss" />
+    <Content Include="Company\scss\_mixins.scss" />
+    <Content Include="Company\scss\_navs.scss" />
+    <Content Include="Company\scss\_utilities.scss" />
+    <Content Include="Company\scss\_variables.scss" />
+    <Content Include="Company\scss\navs\_global.scss" />
+    <Content Include="Company\scss\navs\_sidebar.scss" />
+    <Content Include="Company\scss\navs\_topbar.scss" />
+    <Content Include="Company\scss\utilities\_animation.scss" />
+    <Content Include="Company\scss\utilities\_background.scss" />
+    <Content Include="Company\scss\utilities\_border.scss" />
+    <Content Include="Company\scss\utilities\_display.scss" />
+    <Content Include="Company\scss\utilities\_progress.scss" />
+    <Content Include="Company\scss\utilities\_rotate.scss" />
+    <Content Include="Company\scss\utilities\_text.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="User\Aboutus.aspx" />
+    <Content Include="User\ContactUs.aspx" />
+    <Content Include="User\Default.aspx" />
+    <Content Include="JobSeeker\Aboutus.aspx" />
+    <Content Include="JobSeeker\ChatForHelp.aspx" />
+    <Content Include="JobSeeker\Default.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AppliedCandidateWithsStatus.aspx.cs">
+      <DependentUpon>AppliedCandidateWithsStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AppliedCandidateWithsStatus.aspx.designer.cs">
+      <DependentUpon>AppliedCandidateWithsStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageCategory.aspx.cs">
+      <DependentUpon>ManageCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageCategory.aspx.designer.cs">
+      <DependentUpon>ManageCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageCompanies.aspx.cs">
+      <DependentUpon>ManageCompanies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageCompanies.aspx.designer.cs">
+      <DependentUpon>ManageCompanies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageJobSeekers.aspx.cs">
+      <DependentUpon>ManageJobSeekers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageJobSeekers.aspx.designer.cs">
+      <DependentUpon>ManageJobSeekers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManagePostedJobs.aspx.cs">
+      <DependentUpon>ManagePostedJobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManagePostedJobs.aspx.designer.cs">
+      <DependentUpon>ManagePostedJobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageTheAppliedCandidates.aspx.cs">
+      <DependentUpon>ManageTheAppliedCandidates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageTheAppliedCandidates.aspx.designer.cs">
+      <DependentUpon>ManageTheAppliedCandidates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Messages.aspx.cs">
+      <DependentUpon>Messages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Messages.aspx.designer.cs">
+      <DependentUpon>Messages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Notifications.aspx.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Notifications.aspx.designer.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ProfilePage.aspx.cs">
+      <DependentUpon>ProfilePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ProfilePage.aspx.designer.cs">
+      <DependentUpon>ProfilePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RegistaredCompany.aspx.cs">
+      <DependentUpon>RegistaredCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RegistaredCompany.aspx.designer.cs">
+      <DependentUpon>RegistaredCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UpdateAboutUsPage.aspx.cs">
+      <DependentUpon>UpdateAboutUsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UpdateAboutUsPage.aspx.designer.cs">
+      <DependentUpon>UpdateAboutUsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UpdateContactasPage.aspx.cs">
+      <DependentUpon>UpdateContactasPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UpdateContactasPage.aspx.designer.cs">
+      <DependentUpon>UpdateContactasPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\EditTakeAction.aspx.cs">
+      <DependentUpon>EditTakeAction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\EditTakeAction.aspx.designer.cs">
+      <DependentUpon>EditTakeAction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\PostJobs.aspx.cs">
+      <DependentUpon>PostJobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\PostJobs.aspx.designer.cs">
+      <DependentUpon>PostJobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\ManagePostedJobs.aspx.cs">
+      <DependentUpon>ManagePostedJobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\ManagePostedJobs.aspx.designer.cs">
+      <DependentUpon>ManagePostedJobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CommunicationWithCandidate.aspx.cs">
+      <DependentUpon>CommunicationWithCandidate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\CommunicationWithCandidate.aspx.designer.cs">
+      <DependentUpon>CommunicationWithCandidate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompanyMaster.Master.cs">
+      <DependentUpon>CompanyMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompanyMaster.Master.designer.cs">
+      <DependentUpon>CompanyMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Company\ProfilePage.aspx.cs">
+      <DependentUpon>ProfilePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\ProfilePage.aspx.designer.cs">
+      <DependentUpon>ProfilePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\dashboard.aspx.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\dashboard.aspx.designer.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\ManageAppliedCandidate.aspx.cs">
+      <DependentUpon>ManageAppliedCandidate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\ManageAppliedCandidate.aspx.designer.cs">
+      <DependentUpon>ManageAppliedCandidate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\SettingPage.aspx.cs">
+      <DependentUpon>SettingPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\SettingPage.aspx.designer.cs">
+      <DependentUpon>SettingPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\TakeActionPage.aspx.cs">
+      <DependentUpon>TakeActionPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\TakeActionPage.aspx.designer.cs">
+      <DependentUpon>TakeActionPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\UpdateThePostedJob.aspx.cs">
+      <DependentUpon>UpdateThePostedJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\UpdateThePostedJob.aspx.designer.cs">
+      <DependentUpon>UpdateThePostedJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\ViewSingleCandidateDetails.aspx.cs">
+      <DependentUpon>ViewSingleCandidateDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\ViewSingleCandidateDetails.aspx.designer.cs">
+      <DependentUpon>ViewSingleCandidateDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeeker\Aboutus.aspx.cs">
+      <DependentUpon>Aboutus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeeker\Aboutus.aspx.designer.cs">
+      <DependentUpon>Aboutus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeeker\AppliedJobs.aspx.cs">
+      <DependentUpon>AppliedJobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeeker\AppliedJobs.aspx.designer.cs">
+      <DependentUpon>AppliedJobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeeker\ChatForHelp.aspx.cs">
+      <DependentUpon>ChatForHelp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeeker\ChatForHelp.aspx.designer.cs">
+      <DependentUpon>ChatForHelp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeeker\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeeker\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeeker\FeedbackAndRattingPage.aspx.cs">
+      <DependentUpon>FeedbackAndRattingPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeeker\FeedbackAndRattingPage.aspx.designer.cs">
+      <DependentUpon>FeedbackAndRattingPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeeker\JobDetails.aspx.cs">
+      <DependentUpon>JobDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeeker\JobDetails.aspx.designer.cs">
+      <DependentUpon>JobDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeeker\JobListPage.aspx.cs">
+      <DependentUpon>JobListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeeker\JobListPage.aspx.designer.cs">
+      <DependentUpon>JobListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeeker\JobSeeker.Master.cs">
+      <DependentUpon>JobSeeker.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeeker\JobSeeker.Master.designer.cs">
+      <DependentUpon>JobSeeker.Master</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeeker\ProfilePage.aspx.cs">
+      <DependentUpon>ProfilePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeeker\ProfilePage.aspx.designer.cs">
+      <DependentUpon>ProfilePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeeker\RecruiterMessage.aspx.cs">
+      <DependentUpon>RecruiterMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeeker\RecruiterMessage.aspx.designer.cs">
+      <DependentUpon>RecruiterMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\Aboutus.aspx.cs">
+      <DependentUpon>Aboutus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Aboutus.aspx.designer.cs">
+      <DependentUpon>Aboutus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\RegistrationPageForJH.aspx.cs">
+      <DependentUpon>RegistrationPageForJH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\RegistrationPageForJH.aspx.designer.cs">
+      <DependentUpon>RegistrationPageForJH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\RegistrationPageForJS.aspx.cs">
+      <DependentUpon>RegistrationPageForJS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\RegistrationPageForJS.aspx.designer.cs">
+      <DependentUpon>RegistrationPageForJS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserMaster.Master.cs">
+      <DependentUpon>UserMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\UserMaster.Master.designer.cs">
+      <DependentUpon>UserMaster.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\js\demo\" />
+    <Folder Include="Admin\scss\navs\" />
+    <Folder Include="Admin\scss\utilities\" />
+    <Folder Include="Admin\vendor\bootstrap\" />
+    <Folder Include="Admin\vendor\chart.js\" />
+    <Folder Include="Admin\vendor\datatables\" />
+    <Folder Include="Admin\vendor\fontawesome-free\" />
+    <Folder Include="Admin\vendor\jquery-easing\" />
+    <Folder Include="Admin\vendor\jquery\" />
+    <Folder Include="assets\img\about\" />
+    <Folder Include="assets\img\adapt_icon\" />
+    <Folder Include="assets\img\banner\" />
+    <Folder Include="assets\img\blog\" />
+    <Folder Include="assets\img\comment\" />
+    <Folder Include="assets\img\elements\" />
+    <Folder Include="assets\img\gallery\" />
+    <Folder Include="assets\img\hero\" />
+    <Folder Include="assets\img\icon\" />
+    <Folder Include="assets\img\logo\" />
+    <Folder Include="assets\img\offers\" />
+    <Folder Include="assets\img\our_blog\" />
+    <Folder Include="assets\img\post\" />
+    <Folder Include="assets\img\prising\" />
+    <Folder Include="assets\img\service\" />
+    <Folder Include="assets\img\team\" />
+    <Folder Include="assets\img\testmonial\" />
+    <Folder Include="Company\Images\" />
+    <Folder Include="Company\vendor\bootstrap\" />
+    <Folder Include="Company\vendor\chart.js\" />
+    <Folder Include="Company\vendor\datatables\" />
+    <Folder Include="Company\vendor\fontawesome-free\" />
+    <Folder Include="Company\vendor\jquery-easing\" />
+    <Folder Include="Company\vendor\jquery\" />
+    <Folder Include="JobSeeker\Images\" />
+    <Folder Include="JobSeeker\Resumes\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64015</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64015/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
